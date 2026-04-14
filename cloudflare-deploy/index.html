@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>CNsourcer.com | China Sourcing &amp; Industrial Clusters</title>
+    <meta name="description" content="CNsourcer helps global buyers discover Chinese suppliers and industrial clusters by product keyword.">
+    <meta name="theme-color" content="#0f5f53">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="shortcut icon" href="./favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/site.css">
+</head>
+<body data-page="site">
+    <header class="hero-shell">
+        <div class="container">
+            <div class="topbar">
+                <a class="brand" href="./index.html">
+                    <span class="brand-mark">CN</span>
+                    <span class="brand-copy">
+                        <strong>CNsourcer.com</strong>
+                        <small id="taglineText">Industrial Cluster Navigator</small>
+                    </span>
+                </a>
+                <div class="topbar-actions">
+                    <div id="authControls" class="auth-controls"></div>
+                    <div class="lang-switch">
+                        <button class="lang-btn active" data-lang="en" type="button">EN</button>
+                        <button class="lang-btn" data-lang="zh" type="button">中文</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <h1 id="heroTitle">Find China's Best Industrial Clusters &amp; Suppliers</h1>
+                    <p class="hero-desc" id="heroDesc">Search by product name to discover matching manufacturing hubs and verified B2B partners. Furniture, electronics, textiles, daily goods, direct from source.</p>
+                    <div class="hero-panel">
+                        <div class="search-card">
+                            <label class="search-label" for="searchInput" id="searchLabel">Search products</label>
+                            <div class="search-row">
+                                <input type="text" id="searchInput" autocomplete="off" placeholder="Search product... e.g. LED light, phone case, sofa">
+                                <button class="clear-btn" id="clearSearchBtn" type="button" aria-label="Clear search">
+                                    <i class="fas fa-xmark"></i>
+                                </button>
+                                <button class="primary-btn" id="searchBtn" type="button">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="helper-text hero-helper" id="helperText">Supports English and Chinese keyword matching.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <div class="container">
+            <section class="toolbar" id="statsBar"></section>
+            <section id="statusNotice" class="status-banner hidden" aria-live="polite"></section>
+            <section id="mainContent"></section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-wrap">
+            <div class="footer-main">
+                <p class="footer-title">CNsourcer.com</p>
+                <p id="footerText">Leading industrial clusters across China | Fuzzy search supported | Direct supplier contacts for global sourcing</p>
+            </div>
+            <div class="footer-contact">
+                <span class="footer-contact-label">Admin Contact</span>
+                <a class="footer-contact-link" href="mailto:375952010@qq.com">375952010@qq.com</a>
+                <button class="wechat-trigger" id="wechatTriggerBtn" type="button" aria-label="Open WeChat QR code">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M8.08 7.46c-3.31 0-6 2.29-6 5.12 0 1.63.9 3.08 2.3 4.02l-.58 1.88 2.14-1.09c.67.18 1.39.28 2.14.28.28 0 .56-.01.83-.05-.2-.52-.31-1.08-.31-1.67 0-2.91 2.77-5.28 6.17-5.28.17 0 .35.01.52.02-.67-1.84-2.62-3.23-5.21-3.23Zm-2.19 3.17a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7Zm4.38 0a.85.85 0 1 1 0 1.7.85.85 0 0 1 0-1.7Zm7.16 1.23c-2.75 0-4.99 1.84-4.99 4.11 0 2.27 2.24 4.11 4.99 4.11.56 0 1.11-.08 1.62-.23l1.63.83-.45-1.43c1.06-.71 1.73-1.73 1.73-2.87 0-2.27-2.24-4.11-4.53-4.11Zm-1.65 2.01a.71.71 0 1 1 0 1.42.71.71 0 0 1 0-1.42Zm3.28 0a.71.71 0 1 1 0 1.42.71.71 0 0 1 0-1.42Z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <div class="qr-modal hidden" id="qrModal" aria-hidden="true">
+        <div class="qr-backdrop" data-qr-close="true"></div>
+        <div class="qr-dialog" role="dialog" aria-modal="true" aria-labelledby="qrTitle">
+            <button class="auth-close" id="qrCloseBtn" type="button" aria-label="Close"><i class="fas fa-xmark"></i></button>
+            <p class="section-kicker auth-kicker">WeChat</p>
+            <h2 id="qrTitle">Scan to add the site admin</h2>
+            <img class="qr-image" src="./assets/images/wechat-qr.png" alt="WeChat QR code">
+        </div>
+    </div>
+
+    <div class="auth-modal hidden" id="authModal" aria-hidden="true">
+        <div class="auth-backdrop" data-auth-close="true"></div>
+        <div class="auth-dialog" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+            <button class="auth-close" id="authCloseBtn" type="button" aria-label="Close"><i class="fas fa-xmark"></i></button>
+            <p class="section-kicker auth-kicker">Account</p>
+            <h2 id="authTitle">Login or create an account</h2>
+            <div class="auth-tabs">
+                <button class="auth-tab active" id="loginTabBtn" type="button" data-auth-tab="login">Login</button>
+                <button class="auth-tab" id="registerTabBtn" type="button" data-auth-tab="register">Register</button>
+            </div>
+            <form id="authForm" class="auth-form">
+                <label>
+                    Username
+                    <input id="authUsername" name="username" type="text" autocomplete="username" required>
+                </label>
+                <label id="authEmailField" class="hidden">
+                    Email
+                    <input id="authEmail" name="email" type="email" autocomplete="email">
+                </label>
+                <label>
+                    Password
+                    <input id="authPassword" name="password" type="password" autocomplete="current-password" required>
+                </label>
+                <p id="authMessage" class="auth-message hidden" aria-live="polite"></p>
+                <button class="primary-btn wide-btn" id="authSubmitBtn" type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./assets/js/site-app.js" type="module"></script>
+</body>
+</html>
