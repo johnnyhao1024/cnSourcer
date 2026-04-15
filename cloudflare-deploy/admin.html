@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>CNsourcer Admin | Publish Clusters &amp; Suppliers</title>
+    <meta name="description" content="Cloudflare-backed admin panel for publishing CNsourcer industrial clusters and supplier data.">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="theme-color" content="#0f5f53">
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+    <link rel="shortcut icon" href="./favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/site.css">
+</head>
+<body data-page="admin">
+    <header class="admin-hero">
+        <div class="container">
+            <div class="topbar">
+                <a class="brand" href="./index.html">
+                    <span class="brand-mark">CN</span>
+                    <span class="brand-copy">
+                        <strong>CNsourcer Admin</strong>
+                        <small>Publishing workspace</small>
+                    </span>
+                </a>
+                <div class="topbar-actions">
+                    <a class="ghost-link" href="./index.html">View Site</a>
+                    <div id="adminSessionControls" class="auth-controls"></div>
+                </div>
+            </div>
+
+            <div class="admin-hero-copy">
+                <p class="eyebrow">Cloudflare Pages + D1</p>
+                <h1>Publish industrial clusters and suppliers like a real CMS</h1>
+                <p class="hero-desc">Add new records here and save them directly into your Cloudflare database. The public site reads the latest data automatically, so you no longer need to export JSON and re-upload the whole project for each update.</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <div class="container admin-layout">
+            <section class="admin-sidebar card">
+                <div class="sidebar-section">
+                    <p class="section-kicker">Workspace</p>
+                    <h2>Publishing controls</h2>
+                    <p class="muted">Backend mode saves directly to Cloudflare D1. Fallback tools remain available if the API is offline.</p>
+                </div>
+
+                <div class="action-stack">
+                    <div class="mode-badge" id="backendModeBadge">Connecting to backend...</div>
+                    <button class="primary-btn wide-btn" id="scrollQuickPublishBtn" type="button">
+                        <i class="fas fa-bolt"></i>
+                        Quick publish
+                    </button>
+                    <button class="secondary-btn wide-btn" id="scrollMerchantManagerBtn" type="button">
+                        <i class="fas fa-store"></i>
+                        Jump to merchant manager
+                    </button>
+                    <button class="secondary-btn wide-btn fallback-tool" id="exportJsonBtn" type="button">
+                        <i class="fas fa-download"></i>
+                        Export `site-data.json`
+                    </button>
+                    <label class="secondary-btn wide-btn file-label fallback-tool" for="importJsonInput">
+                        <i class="fas fa-upload"></i>
+                        Import JSON
+                    </label>
+                    <input id="importJsonInput" type="file" accept=".json,application/json" hidden>
+                    <button class="secondary-btn wide-btn fallback-tool" id="copyJsonBtn" type="button">
+                        <i class="fas fa-copy"></i>
+                        Copy JSON
+                    </button>
+                    <button class="danger-btn wide-btn fallback-tool" id="resetDataBtn" type="button">
+                        <i class="fas fa-rotate-left"></i>
+                        Reset to bundled data
+                    </button>
+                </div>
+
+                <div class="sidebar-section">
+                    <p class="section-kicker">Quick stats</p>
+                    <div class="metric-list" id="adminMetrics"></div>
+                </div>
+
+                <div class="sidebar-section">
+                    <p class="section-kicker">How publishing works</p>
+                    <ol class="simple-steps">
+                        <li>Log in as the admin account.</li>
+                        <li>Use Quick publish to add a cluster or merchant.</li>
+                        <li>Save edits in the manager list when you update existing records.</li>
+                        <li>The public site will read the latest data from the backend automatically.</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="admin-main">
+                <section id="adminNotice" class="status-banner hidden" aria-live="polite"></section>
+
+                <section class="card admin-section" id="quickPublishSection">
+                    <div class="section-head">
+                        <div>
+                            <p class="section-kicker">Quick publish</p>
+                            <h2>Add new records fast</h2>
+                        </div>
+                    </div>
+                    <div class="quick-publish-grid">
+                        <form class="editor-card quick-form" id="quickIndustryForm">
+                            <div class="editor-card-head">
+                                <h3>New cluster</h3>
+                                <span class="industry-pill">Direct publish</span>
+                            </div>
+                            <div class="field-grid two-col">
+                                <label>
+                                    Cluster ID
+                                    <input id="quickIndustryId" type="text" placeholder="ind35">
+                                </label>
+                                <label>
+                                    English name
+                                    <input id="quickIndustryNameEn" type="text" placeholder="Ningbo Appliance Cluster">
+                                </label>
+                                <label>
+                                    Chinese name
+                                    <input id="quickIndustryNameZh" type="text" placeholder="宁波家电产业带">
+                                </label>
+                                <label>
+                                    English location
+                                    <input id="quickIndustryLocationEn" type="text" placeholder="Ningbo, Zhejiang">
+                                </label>
+                                <label>
+                                    Chinese location
+                                    <input id="quickIndustryLocationZh" type="text" placeholder="浙江省 · 宁波市">
+                                </label>
+                                <label>
+                                    Main products (EN)
+                                    <input id="quickIndustryProductsEn" type="text" placeholder="Fan, Rice Cooker, Air Fryer">
+                                </label>
+                            </div>
+                            <div class="field-grid">
+                                <label>
+                                    Main products (ZH)
+                                    <textarea id="quickIndustryProductsZh" placeholder="风扇, 电饭煲, 空气炸锅"></textarea>
+                                </label>
+                            </div>
+                            <div class="editor-actions">
+                                <button class="primary-btn" id="publishIndustryBtn" type="submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Publish cluster
+                                </button>
+                            </div>
+                        </form>
+
+                        <form class="editor-card quick-form" id="quickMerchantForm">
+                            <div class="editor-card-head">
+                                <h3>New merchant</h3>
+                                <span class="industry-pill">Direct publish</span>
+                            </div>
+                            <div class="field-grid two-col">
+                                <label>
+                                    Merchant ID
+                                    <input id="quickMerchantId" type="text" placeholder="m69">
+                                </label>
+                                <label>
+                                    Merchant name
+                                    <input id="quickMerchantName" type="text" placeholder="New Supplier Ltd.">
+                                </label>
+                                <label>
+                                    Cluster ID
+                                    <input id="quickMerchantIndustryId" type="text" placeholder="Optional, e.g. ind7">
+                                </label>
+                                <label>
+                                    Linked cluster name
+                                    <select id="quickMerchantIndustrySelect"></select>
+                                </label>
+                                <label>
+                                    Email
+                                    <input id="quickMerchantEmail" type="email" placeholder="sales@example.com">
+                                </label>
+                                <label>
+                                    Website
+                                    <input id="quickMerchantWebsite" type="text" placeholder="www.example.com">
+                                </label>
+                                <label>
+                                    Phone
+                                    <input id="quickMerchantPhone" type="text" placeholder="+86 123 4567 8910">
+                                </label>
+                            </div>
+                            <div class="field-grid">
+                                <label>
+                                    Products
+                                    <textarea id="quickMerchantProducts" placeholder="List products, keywords, and categories"></textarea>
+                                </label>
+                            </div>
+                            <div class="editor-actions">
+                                <button class="primary-btn" id="publishMerchantBtn" type="submit">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Publish merchant
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="card admin-section">
+                    <div class="section-head">
+                        <div>
+                            <p class="section-kicker">Industrial clusters</p>
+                            <h2>Manage existing clusters</h2>
+                        </div>
+                        <button class="primary-btn" id="addIndustryBtn" type="button">
+                            <i class="fas fa-plus"></i>
+                            New cluster
+                        </button>
+                    </div>
+                    <div class="filter-row admin-tools">
+                        <label class="search-filter" for="industrySearchInput">
+                            Search clusters
+                            <input id="industrySearchInput" type="text" placeholder="Search by ID, name, location, or product">
+                        </label>
+                    </div>
+                    <div id="industryList" class="editor-list"></div>
+                </section>
+
+                <section class="card admin-section">
+                    <div class="section-head">
+                        <div>
+                            <p class="section-kicker">Suppliers</p>
+                            <h2>Manage existing merchants</h2>
+                        </div>
+                        <button class="primary-btn" id="addMerchantBtn" type="button">
+                            <i class="fas fa-plus"></i>
+                            New merchant
+                        </button>
+                    </div>
+                    <div class="filter-row admin-tools">
+                        <label class="search-filter" for="merchantSearchInput">
+                            Search merchants
+                            <input id="merchantSearchInput" type="text" placeholder="Search by merchant, website, product, or cluster ID">
+                        </label>
+                        <label class="select-filter" for="merchantIndustryFilter">
+                            Filter by cluster
+                            <select id="merchantIndustryFilter"></select>
+                        </label>
+                    </div>
+                    <div id="merchantList" class="editor-list"></div>
+                </section>
+            </section>
+        </div>
+    </main>
+
+    <script src="./assets/js/admin-app.js" type="module"></script>
+</body>
+</html>
