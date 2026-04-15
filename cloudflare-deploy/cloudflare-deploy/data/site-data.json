@@ -1,0 +1,926 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-13",
+  "industries": [
+    {
+      "id": "ind1",
+      "name_zh": "深圳电子产业带",
+      "name_en": "Shenzhen Electronics Cluster",
+      "location_zh": "广东省 · 深圳市",
+      "location_en": "Shenzhen, Guangdong",
+      "mainProducts": ["开源硬件", "开发板", "传感器", "嵌入式模组"],
+      "mainProducts_en": ["Open-source Hardware", "Development Boards", "Sensors", "Embedded Modules"]
+    },
+    {
+      "id": "ind2",
+      "name_zh": "东莞电子制造产业带",
+      "name_en": "Dongguan Electronics Manufacturing Cluster",
+      "location_zh": "广东省 · 东莞市",
+      "location_en": "Dongguan, Guangdong",
+      "mainProducts": ["蓝牙音箱", "语音模组", "消费电子", "音频设备"],
+      "mainProducts_en": ["Bluetooth Speakers", "Voice Modules", "Consumer Electronics", "Audio Devices"]
+    },
+    {
+      "id": "ind3",
+      "name_zh": "惠州锂电池产业带",
+      "name_en": "Huizhou Lithium Battery Cluster",
+      "location_zh": "广东省 · 惠州市",
+      "location_en": "Huizhou, Guangdong",
+      "mainProducts": ["锂电池组", "储能电池", "电动工具电池", "电池定制"],
+      "mainProducts_en": ["Lithium Battery Packs", "Energy Storage Batteries", "Power Tool Batteries", "Custom Battery Solutions"]
+    },
+    {
+      "id": "ind4",
+      "name_zh": "广州美妆个护产业带",
+      "name_en": "Guangzhou Beauty & Personal Care Cluster",
+      "location_zh": "广东省 · 广州市",
+      "location_en": "Guangzhou, Guangdong",
+      "mainProducts": ["护肤品", "彩妆", "洗护用品", "OEM代工"],
+      "mainProducts_en": ["Skincare", "Cosmetics", "Personal Care", "OEM Manufacturing"]
+    },
+    {
+      "id": "ind5",
+      "name_zh": "佛山家具产业带",
+      "name_en": "Foshan Furniture Cluster",
+      "location_zh": "广东省 · 佛山市",
+      "location_en": "Foshan, Guangdong",
+      "mainProducts": ["沙发", "床架", "餐桌椅", "客厅家具"],
+      "mainProducts_en": ["Sofas", "Bed Frames", "Dining Sets", "Living Room Furniture"]
+    },
+    {
+      "id": "ind6",
+      "name_zh": "顺德家电产业带",
+      "name_en": "Shunde Home Appliance Cluster",
+      "location_zh": "广东省 · 佛山市顺德区",
+      "location_en": "Shunde, Foshan, Guangdong",
+      "mainProducts": ["空调压缩机", "家电电机", "小家电", "核心零部件"],
+      "mainProducts_en": ["Compressors", "Appliance Motors", "Small Appliances", "Core Components"]
+    },
+    {
+      "id": "ind7",
+      "name_zh": "中山灯饰产业带",
+      "name_en": "Zhongshan Lighting Cluster",
+      "location_zh": "广东省 · 中山市",
+      "location_en": "Zhongshan, Guangdong",
+      "mainProducts": ["吊灯", "吸顶灯", "壁灯", "酒店照明"],
+      "mainProducts_en": ["Chandeliers", "Ceiling Lights", "Wall Lamps", "Hospitality Lighting"]
+    },
+    {
+      "id": "ind8",
+      "name_zh": "汕头玩具产业带",
+      "name_en": "Shantou Toy Cluster",
+      "location_zh": "广东省 · 汕头市澄海区",
+      "location_en": "Chenghai, Shantou, Guangdong",
+      "mainProducts": ["遥控玩具", "益智玩具", "积木", "婴童玩具"],
+      "mainProducts_en": ["RC Toys", "Educational Toys", "Blocks", "Baby Toys"]
+    },
+    {
+      "id": "ind9",
+      "name_zh": "揭阳不锈钢产业带",
+      "name_en": "Jieyang Stainless Steel Cluster",
+      "location_zh": "广东省 · 揭阳市",
+      "location_en": "Jieyang, Guangdong",
+      "mainProducts": ["刀叉餐具", "厨房用品", "不锈钢器皿", "酒店餐具"],
+      "mainProducts_en": ["Flatware", "Kitchenware", "Stainless Steel Utensils", "Hotel Tableware"]
+    },
+    {
+      "id": "ind10",
+      "name_zh": "潮州陶瓷产业带",
+      "name_en": "Chaozhou Ceramics Cluster",
+      "location_zh": "广东省 · 潮州市",
+      "location_en": "Chaozhou, Guangdong",
+      "mainProducts": ["日用陶瓷", "工艺陶瓷", "陶瓷花盆", "卫浴陶瓷"],
+      "mainProducts_en": ["Daily Ceramics", "Craft Ceramics", "Ceramic Planters", "Ceramic Sanitary Ware"]
+    },
+    {
+      "id": "ind11",
+      "name_zh": "义乌小商品产业带",
+      "name_en": "Yiwu Small Commodities Cluster",
+      "location_zh": "浙江省 · 义乌市",
+      "location_en": "Yiwu, Zhejiang",
+      "mainProducts": ["圣诞用品", "节庆礼品", "派对装饰", "促销礼品"],
+      "mainProducts_en": ["Christmas Supplies", "Festive Gifts", "Party Decorations", "Promotional Gifts"]
+    },
+    {
+      "id": "ind12",
+      "name_zh": "绍兴纺织产业带",
+      "name_en": "Shaoxing Textile Cluster",
+      "location_zh": "浙江省 · 绍兴市柯桥区",
+      "location_en": "Keqiao, Shaoxing, Zhejiang",
+      "mainProducts": ["针织面料", "梭织面料", "印花布", "时装面料"],
+      "mainProducts_en": ["Knitted Fabrics", "Woven Fabrics", "Printed Fabrics", "Fashion Fabrics"]
+    },
+    {
+      "id": "ind13",
+      "name_zh": "永康五金产业带",
+      "name_en": "Yongkang Hardware Cluster",
+      "location_zh": "浙江省 · 永康市",
+      "location_en": "Yongkang, Zhejiang",
+      "mainProducts": ["电动工具", "园林工具", "五金配件", "切割设备"],
+      "mainProducts_en": ["Power Tools", "Garden Tools", "Hardware Accessories", "Cutting Equipment"]
+    },
+    {
+      "id": "ind14",
+      "name_zh": "台州模具塑料产业带",
+      "name_en": "Taizhou Plastic Mould Cluster",
+      "location_zh": "浙江省 · 台州市黄岩区",
+      "location_en": "Huangyan, Taizhou, Zhejiang",
+      "mainProducts": ["注塑模具", "家居塑料制品", "周转箱", "汽车塑件"],
+      "mainProducts_en": ["Injection Moulds", "Plastic Housewares", "Crates", "Automotive Plastic Parts"]
+    },
+    {
+      "id": "ind15",
+      "name_zh": "宁波家电产业带",
+      "name_en": "Ningbo Home Appliance Cluster",
+      "location_zh": "浙江省 · 宁波市",
+      "location_en": "Ningbo, Zhejiang",
+      "mainProducts": ["取暖器", "空气炸锅", "厨房电器", "季节性家电"],
+      "mainProducts_en": ["Heaters", "Air Fryers", "Kitchen Appliances", "Seasonal Appliances"]
+    },
+    {
+      "id": "ind16",
+      "name_zh": "温州鞋业产业带",
+      "name_en": "Wenzhou Footwear Cluster",
+      "location_zh": "浙江省 · 温州市",
+      "location_en": "Wenzhou, Zhejiang",
+      "mainProducts": ["女鞋", "休闲鞋", "凉鞋", "时尚鞋履"],
+      "mainProducts_en": ["Women's Shoes", "Casual Shoes", "Sandals", "Fashion Footwear"]
+    },
+    {
+      "id": "ind17",
+      "name_zh": "安吉办公椅产业带",
+      "name_en": "Anji Office Chair Cluster",
+      "location_zh": "浙江省 · 湖州市安吉县",
+      "location_en": "Anji, Huzhou, Zhejiang",
+      "mainProducts": ["办公椅", "电竞椅", "人体工学椅", "网布椅"],
+      "mainProducts_en": ["Office Chairs", "Gaming Chairs", "Ergonomic Chairs", "Mesh Chairs"]
+    },
+    {
+      "id": "ind18",
+      "name_zh": "丹阳眼镜产业带",
+      "name_en": "Danyang Eyewear Cluster",
+      "location_zh": "江苏省 · 镇江市丹阳市",
+      "location_en": "Danyang, Zhenjiang, Jiangsu",
+      "mainProducts": ["光学镜片", "太阳镜", "镜架", "儿童眼镜"],
+      "mainProducts_en": ["Optical Lenses", "Sunglasses", "Frames", "Kids Eyewear"]
+    },
+    {
+      "id": "ind19",
+      "name_zh": "苏州婚纱礼服产业带",
+      "name_en": "Suzhou Bridal Wear Cluster",
+      "location_zh": "江苏省 · 苏州市",
+      "location_en": "Suzhou, Jiangsu",
+      "mainProducts": ["婚纱", "礼服", "伴娘裙", "定制礼服"],
+      "mainProducts_en": ["Wedding Dresses", "Evening Gowns", "Bridesmaid Dresses", "Custom Bridal Wear"]
+    },
+    {
+      "id": "ind20",
+      "name_zh": "南通家纺产业带",
+      "name_en": "Nantong Home Textile Cluster",
+      "location_zh": "江苏省 · 南通市",
+      "location_en": "Nantong, Jiangsu",
+      "mainProducts": ["床品套件", "被芯", "枕头", "家居布艺"],
+      "mainProducts_en": ["Bedding Sets", "Quilts", "Pillows", "Home Textiles"]
+    },
+    {
+      "id": "ind21",
+      "name_zh": "景德镇陶瓷产业带",
+      "name_en": "Jingdezhen Ceramics Cluster",
+      "location_zh": "江西省 · 景德镇市",
+      "location_en": "Jingdezhen, Jiangxi",
+      "mainProducts": ["餐具", "茶具", "艺术瓷", "礼品瓷"],
+      "mainProducts_en": ["Dinnerware", "Tea Sets", "Art Porcelain", "Gift Porcelain"]
+    },
+    {
+      "id": "ind22",
+      "name_zh": "晋江鞋服产业带",
+      "name_en": "Jinjiang Footwear Cluster",
+      "location_zh": "福建省 · 泉州市晋江市",
+      "location_en": "Jinjiang, Quanzhou, Fujian",
+      "mainProducts": ["运动鞋", "童鞋", "休闲鞋", "鞋材"],
+      "mainProducts_en": ["Sports Shoes", "Kids Shoes", "Casual Shoes", "Shoe Materials"]
+    },
+    {
+      "id": "ind23",
+      "name_zh": "石狮服装产业带",
+      "name_en": "Shishi Garment Cluster",
+      "location_zh": "福建省 · 泉州市石狮市",
+      "location_en": "Shishi, Quanzhou, Fujian",
+      "mainProducts": ["男装", "休闲服", "运动服", "梭织服装"],
+      "mainProducts_en": ["Menswear", "Casual Wear", "Sportswear", "Woven Garments"]
+    },
+    {
+      "id": "ind24",
+      "name_zh": "德化陶瓷产业带",
+      "name_en": "Dehua Ceramics Cluster",
+      "location_zh": "福建省 · 泉州市德化县",
+      "location_en": "Dehua, Quanzhou, Fujian",
+      "mainProducts": ["白瓷工艺品", "茶具", "家居摆件", "香薰器皿"],
+      "mainProducts_en": ["White Porcelain Crafts", "Tea Sets", "Home Decor", "Aroma Diffusers"]
+    },
+    {
+      "id": "ind25",
+      "name_zh": "厦门箱包产业带",
+      "name_en": "Xiamen Bags & Luggage Cluster",
+      "location_zh": "福建省 · 厦门市",
+      "location_en": "Xiamen, Fujian",
+      "mainProducts": ["背包", "旅行箱包", "电脑包", "户外包"],
+      "mainProducts_en": ["Backpacks", "Travel Bags", "Laptop Bags", "Outdoor Bags"]
+    },
+    {
+      "id": "ind26",
+      "name_zh": "晋江伞具产业带",
+      "name_en": "Jinjiang Umbrella Cluster",
+      "location_zh": "福建省 · 泉州市晋江市东石镇",
+      "location_en": "Dongshi, Jinjiang, Fujian",
+      "mainProducts": ["广告伞", "高尔夫伞", "折叠伞", "礼品伞"],
+      "mainProducts_en": ["Promotional Umbrellas", "Golf Umbrellas", "Folding Umbrellas", "Gift Umbrellas"]
+    },
+    {
+      "id": "ind27",
+      "name_zh": "泉州卫生用品产业带",
+      "name_en": "Quanzhou Hygiene Products Cluster",
+      "location_zh": "福建省 · 泉州市",
+      "location_en": "Quanzhou, Fujian",
+      "mainProducts": ["纸尿裤", "拉拉裤", "卫生巾", "湿巾"],
+      "mainProducts_en": ["Baby Diapers", "Training Pants", "Sanitary Pads", "Wet Wipes"]
+    },
+    {
+      "id": "ind28",
+      "name_zh": "仙桃无纺布产业带",
+      "name_en": "Xiantao Nonwoven Cluster",
+      "location_zh": "湖北省 · 仙桃市",
+      "location_en": "Xiantao, Hubei",
+      "mainProducts": ["防护服", "口罩", "手术帽", "无纺布制品"],
+      "mainProducts_en": ["Protective Coveralls", "Face Masks", "Bouffant Caps", "Nonwoven Products"]
+    },
+    {
+      "id": "ind29",
+      "name_zh": "许昌发制品产业带",
+      "name_en": "Xuchang Hair Products Cluster",
+      "location_zh": "河南省 · 许昌市",
+      "location_en": "Xuchang, Henan",
+      "mainProducts": ["假发", "接发", "发帘", "真人发制品"],
+      "mainProducts_en": ["Wigs", "Hair Extensions", "Weaves", "Human Hair Products"]
+    },
+    {
+      "id": "ind30",
+      "name_zh": "洛阳办公家具产业带",
+      "name_en": "Luoyang Office Furniture Cluster",
+      "location_zh": "河南省 · 洛阳市",
+      "location_en": "Luoyang, Henan",
+      "mainProducts": ["钢制文件柜", "更衣柜", "办公桌", "书架货架"],
+      "mainProducts_en": ["Steel Filing Cabinets", "Lockers", "Office Desks", "Shelving"]
+    },
+    {
+      "id": "ind31",
+      "name_zh": "青岛轮胎产业带",
+      "name_en": "Qingdao Tire Cluster",
+      "location_zh": "山东省 · 青岛市",
+      "location_en": "Qingdao, Shandong",
+      "mainProducts": ["卡车轮胎", "工程胎", "乘用车轮胎", "越野轮胎"],
+      "mainProducts_en": ["Truck Tires", "OTR Tires", "Passenger Car Tires", "Off-road Tires"]
+    },
+    {
+      "id": "ind32",
+      "name_zh": "威海渔具产业带",
+      "name_en": "Weihai Fishing Tackle Cluster",
+      "location_zh": "山东省 · 威海市",
+      "location_en": "Weihai, Shandong",
+      "mainProducts": ["鱼竿", "鱼线轮", "路亚装备", "渔具套装"],
+      "mainProducts_en": ["Fishing Rods", "Reels", "Lure Tackle", "Fishing Sets"]
+    },
+    {
+      "id": "ind33",
+      "name_zh": "白沟箱包产业带",
+      "name_en": "Baigou Luggage Cluster",
+      "location_zh": "河北省 · 保定市白沟新城",
+      "location_en": "Baigou, Baoding, Hebei",
+      "mainProducts": ["旅行箱", "书包", "电脑包", "时尚箱包"],
+      "mainProducts_en": ["Suitcases", "School Bags", "Laptop Bags", "Fashion Bags"]
+    },
+    {
+      "id": "ind34",
+      "name_zh": "辛集皮革产业带",
+      "name_en": "Xinji Leather Cluster",
+      "location_zh": "河北省 · 辛集市",
+      "location_en": "Xinji, Hebei",
+      "mainProducts": ["皮衣", "皮草", "皮革配饰", "皮革服装"],
+      "mainProducts_en": ["Leather Jackets", "Fur Garments", "Leather Accessories", "Leather Apparel"]
+    }
+  ],
+  "merchants": [
+    {
+      "id": "m1",
+      "industryId": "ind1",
+      "name": "Seeed Studio",
+      "products": "Open-source hardware, development boards, sensors, and IoT modules",
+      "email": "order@seeed.io",
+      "website": "www.seeedstudio.com",
+      "phone": "+86-0755-86095676"
+    },
+    {
+      "id": "m2",
+      "industryId": "ind2",
+      "name": "Dongguan SYNST Electronics Co., Ltd.",
+      "products": "Bluetooth speakers, voice modules, audio products, and electronic assemblies",
+      "email": "gordon@synst.com",
+      "website": "www.synst.com",
+      "phone": "+86-13113100797"
+    },
+    {
+      "id": "m3",
+      "industryId": "ind3",
+      "name": "Huizhou Huiderui Lithium Battery Technology Co., Ltd.",
+      "products": "Lithium battery packs, energy storage batteries, and custom battery solutions",
+      "email": "sales@huiderui.com",
+      "website": "www.huiderui.com",
+      "phone": "+86-752-2652968"
+    },
+    {
+      "id": "m4",
+      "industryId": "ind4",
+      "name": "Guangzhou Dili Cosmetics Co., Ltd.",
+      "products": "Skin care, facial masks, personal care items, and OEM cosmetics",
+      "email": "gzdilihzp@gmail.com",
+      "website": "www.dilihzp.com",
+      "phone": "+86-13660220118"
+    },
+    {
+      "id": "m5",
+      "industryId": "ind5",
+      "name": "Foshan Guoshen Furniture Co., Ltd.",
+      "products": "Living room furniture, sofas, beds, dining tables, and modern home furniture",
+      "email": "Alessa@gsfurnit.com",
+      "website": "www.gsfurnit.com",
+      "phone": "+86-13928684356"
+    },
+    {
+      "id": "m6",
+      "industryId": "ind6",
+      "name": "GMCC & Welling",
+      "products": "Compressors, motors, and core components for home appliances and HVAC systems",
+      "email": "gmccwelling@chinagmcc.com",
+      "website": "industry.midea.com",
+      "phone": "0757-22329082"
+    },
+    {
+      "id": "m7",
+      "industryId": "ind7",
+      "name": "Opple Lighting Co., Ltd.",
+      "products": "Ceiling lights, wall lamps, chandeliers, LED lighting systems, and smart lighting products",
+      "email": "",
+      "website": "www.opple.com",
+      "phone": ""
+    },
+    {
+      "id": "m8",
+      "industryId": "ind8",
+      "name": "Shantou Chenghai Xinyu Toys Factory",
+      "products": "Educational toys, RC toys, building sets, and baby toys",
+      "email": "luis@xinyutoys.com",
+      "website": "xinyutoys.com",
+      "phone": "+86-15876168002"
+    },
+    {
+      "id": "m9",
+      "industryId": "ind9",
+      "name": "Jieyang Ideal Metal Products Co., Ltd.",
+      "products": "Flatware, stainless steel tableware, kitchen utensils, and hotel cutlery",
+      "email": "ideal@ideal-flatware.com",
+      "website": "www.ideal-flatware.com",
+      "phone": "+86-663-8737289"
+    },
+    {
+      "id": "m10",
+      "industryId": "ind10",
+      "name": "Chaozhou Santai Ceramics Co., Ltd.",
+      "products": "Daily ceramics, ceramic homeware, porcelain tableware, and hotel ceramic products",
+      "email": "",
+      "website": "www.santai.cn",
+      "phone": ""
+    },
+    {
+      "id": "m11",
+      "industryId": "ind11",
+      "name": "Yiwu Gangheng E-commerce Co., Ltd.",
+      "products": "Christmas decorations, festive ornaments, gift packaging, and seasonal party supplies",
+      "email": "sunny@ghchristmas.com",
+      "website": "www.ghchristmas.com",
+      "phone": "+86-18750460785"
+    },
+    {
+      "id": "m12",
+      "industryId": "ind12",
+      "name": "Shaoxing Shanning Textile Co., Ltd.",
+      "products": "Knitted fabrics, woven fabrics, printed textiles, and fashion apparel fabrics",
+      "email": "Kavin@shanningtex.com",
+      "website": "www.shanningtex.com",
+      "phone": "+86-13676888125"
+    },
+    {
+      "id": "m13",
+      "industryId": "ind13",
+      "name": "Yongkang Powertec Machinery Co., Ltd.",
+      "products": "Power tools, welding tools, gardening equipment, and cutting tools",
+      "email": "sales@powertectools.com",
+      "website": "www.powertectools.com",
+      "phone": "+86-579-87187632"
+    },
+    {
+      "id": "m14",
+      "industryId": "ind14",
+      "name": "Zhejiang Huangyan Maorong Plastic Mould Co., Ltd.",
+      "products": "Injection moulds, plastic household products, automotive moulds, and storage crates",
+      "email": "info@mamold.com",
+      "website": "www.mamold.com",
+      "phone": ""
+    },
+    {
+      "id": "m15",
+      "industryId": "ind15",
+      "name": "Ningbo Beijiexi Electrical Appliances Co., Ltd.",
+      "products": "Portable heaters, air fryers, fans, and small home appliances",
+      "email": "",
+      "website": "www.beijiexi.com",
+      "phone": ""
+    },
+    {
+      "id": "m16",
+      "industryId": "ind16",
+      "name": "Wenzhou Jishun Shoes Co., Ltd.",
+      "products": "Women's shoes, sandals, casual shoes, and fashion footwear",
+      "email": "",
+      "website": "www.wzjsfootwear.com",
+      "phone": ""
+    },
+    {
+      "id": "m17",
+      "industryId": "ind17",
+      "name": "Anji Oms Furniture Co., Ltd.",
+      "products": "Office chairs, ergonomic chairs, mesh chairs, and gaming chairs",
+      "email": "",
+      "website": "www.aj-oms.com",
+      "phone": ""
+    },
+    {
+      "id": "m18",
+      "industryId": "ind18",
+      "name": "Danyang Hopesun Optical Co., Ltd.",
+      "products": "Optical lenses, sunglasses, eyewear frames, and reading glasses",
+      "email": "sales@hopesunoptical.com",
+      "website": "www.hopesunoptical.com",
+      "phone": ""
+    },
+    {
+      "id": "m19",
+      "industryId": "ind19",
+      "name": "Jancember",
+      "products": "Wedding dresses, bridal gowns, evening dresses, and bridesmaid dresses",
+      "email": "",
+      "website": "jancember.com",
+      "phone": ""
+    },
+    {
+      "id": "m20",
+      "industryId": "ind20",
+      "name": "Nantong Yuan Ran Textile Co., Ltd.",
+      "products": "Bedding sets, quilts, pillows, mattress protectors, and home textiles",
+      "email": "info@allrisingtextile.com",
+      "website": "www.allrisingtextile.com",
+      "phone": ""
+    },
+    {
+      "id": "m21",
+      "industryId": "ind21",
+      "name": "Jingdezhen Wanglong Ceramics Co., Ltd.",
+      "products": "Dinnerware, tea sets, ceramic giftware, and artistic porcelain",
+      "email": "",
+      "website": "http://www.wlceramics.com",
+      "phone": ""
+    },
+    {
+      "id": "m22",
+      "industryId": "ind22",
+      "name": "ANTA Sports Products Limited",
+      "products": "Sports shoes, running shoes, casual footwear, and sportswear products",
+      "email": "",
+      "website": "anta.com",
+      "phone": ""
+    },
+    {
+      "id": "m23",
+      "industryId": "ind23",
+      "name": "Shishi Zieli Textile Technology Co., Ltd.",
+      "products": "Sportswear fabrics, woven garments, casual apparel, and functional textile materials",
+      "email": "",
+      "website": "www.zieli.com",
+      "phone": ""
+    },
+    {
+      "id": "m24",
+      "industryId": "ind24",
+      "name": "Dehua Xingye Ceramic Co., Ltd.",
+      "products": "Ceramic crafts, home decor ceramics, tea sets, and aroma diffusers",
+      "email": "",
+      "website": "www.dehua-ceramics.com",
+      "phone": ""
+    },
+    {
+      "id": "m25",
+      "industryId": "ind25",
+      "name": "Xiamen Cbag Manufacturing Co., Ltd.",
+      "products": "Backpacks, laptop bags, travel bags, and custom luggage products",
+      "email": "",
+      "website": "www.xmcbag.com",
+      "phone": ""
+    },
+    {
+      "id": "m26",
+      "industryId": "ind26",
+      "name": "Titan Umbrella Co., Ltd.",
+      "products": "Promotional umbrellas, golf umbrellas, folding umbrellas, and straight umbrellas",
+      "email": "",
+      "website": "titanumbrella.com",
+      "phone": ""
+    },
+    {
+      "id": "m27",
+      "industryId": "ind27",
+      "name": "Fujian Tianjiao Lady & Baby's Hygiene Supply Co., Ltd.",
+      "products": "Baby diapers, training pants, wet wipes, and baby hygiene products",
+      "email": "",
+      "website": "www.tianjiaodiapers.com",
+      "phone": ""
+    },
+    {
+      "id": "m28",
+      "industryId": "ind28",
+      "name": "Xiantao Yucheng Nonwoven Products Co., Ltd.",
+      "products": "Protective coveralls, face masks, caps, and disposable nonwoven products",
+      "email": "",
+      "website": "www.cnonwoven.com",
+      "phone": ""
+    },
+    {
+      "id": "m29",
+      "industryId": "ind29",
+      "name": "Xuchang Queen Hair Products Co., Ltd.",
+      "products": "Human hair wigs, closures, bundles, and lace hair systems",
+      "email": "info@queenhair.com",
+      "website": "www.queenhair.com",
+      "phone": ""
+    },
+    {
+      "id": "m30",
+      "industryId": "ind30",
+      "name": "Luoyang Meijie Office Furniture Co., Ltd.",
+      "products": "Steel filing cabinets, lockers, office desks, shelves, and storage systems",
+      "email": "sales@meijiefurniture.com",
+      "website": "www.meijiefurniture.com",
+      "phone": ""
+    },
+    {
+      "id": "m31",
+      "industryId": "ind31",
+      "name": "Sailun Group Co., Ltd.",
+      "products": "Truck tires, passenger car tires, OTR tires, and radial tire products",
+      "email": "",
+      "website": "en.sailungroup.com",
+      "phone": ""
+    },
+    {
+      "id": "m32",
+      "industryId": "ind32",
+      "name": "Weihai Weihe Fishing Tackle Co., Ltd.",
+      "products": "Fishing rods, reels, lure tackle, and fishing gear accessories",
+      "email": "sales@weihefishing.com",
+      "website": "www.weihefishing.com",
+      "phone": ""
+    },
+    {
+      "id": "m33",
+      "industryId": "ind33",
+      "name": "Baoding Bodian Luggage And Cases Bag Co., Ltd.",
+      "products": "School bags, backpacks, travel bags, and luggage products",
+      "email": "",
+      "website": "www.baigou-luggage-factory.com",
+      "phone": ""
+    },
+    {
+      "id": "m34",
+      "industryId": "ind34",
+      "name": "Xingji Fur Limited",
+      "products": "Fur garments, leather outerwear, fur trims, and leather apparel",
+      "email": "",
+      "website": "www.fur-china.com",
+      "phone": ""
+    },
+    {
+      "id": "m35",
+      "industryId": "ind1",
+      "name": "Shenzhen Feasycom Co., Ltd.",
+      "products": "Bluetooth modules, Wi-Fi modules, IoT solutions, and wireless embedded hardware",
+      "email": "",
+      "website": "www.feasycom.com",
+      "phone": ""
+    },
+    {
+      "id": "m36",
+      "industryId": "ind2",
+      "name": "Dongguan Sing-E Electronic Technology Co., Ltd.",
+      "products": "Bluetooth speakers, smart audio products, radios, and consumer electronics",
+      "email": "",
+      "website": "www.dgsinge.com",
+      "phone": ""
+    },
+    {
+      "id": "m37",
+      "industryId": "ind3",
+      "name": "EVE Energy Co., Ltd.",
+      "products": "Lithium primary batteries, cylindrical cells, energy storage batteries, and EV battery solutions",
+      "email": "",
+      "website": "www.evebattery.com",
+      "phone": ""
+    },
+    {
+      "id": "m38",
+      "industryId": "ind4",
+      "name": "Guangzhou Ariel Cosmetic Co., Ltd.",
+      "products": "Skin care, private-label cosmetics, facial masks, and personal care OEM products",
+      "email": "",
+      "website": "www.arielcosmetic.com",
+      "phone": ""
+    },
+    {
+      "id": "m39",
+      "industryId": "ind5",
+      "name": "Foshan Shudidi Furniture Co., Ltd.",
+      "products": "Dining tables, chairs, home furniture, and hospitality furniture",
+      "email": "",
+      "website": "www.shudidi.com",
+      "phone": ""
+    },
+    {
+      "id": "m40",
+      "industryId": "ind6",
+      "name": "Midea Group",
+      "products": "Home appliances, compressors, motors, kitchen appliances, and smart home products",
+      "email": "",
+      "website": "www.midea.com",
+      "phone": ""
+    },
+    {
+      "id": "m41",
+      "industryId": "ind7",
+      "name": "Huayi Lighting Company Limited",
+      "products": "Decorative lighting, commercial lighting, hotel lighting, and home lighting systems",
+      "email": "",
+      "website": "www.huayilighting.com",
+      "phone": ""
+    },
+    {
+      "id": "m42",
+      "industryId": "ind8",
+      "name": "Shantou Chenghai Hospeed Toys Factory",
+      "products": "Educational toys, RC toys, playsets, and plastic toy products",
+      "email": "",
+      "website": "www.hospeedtoys.com",
+      "phone": ""
+    },
+    {
+      "id": "m43",
+      "industryId": "ind9",
+      "name": "Jieyang Wanyeda Stainless Steel Products Co., Ltd.",
+      "products": "Stainless steel cutlery, hotel tableware, kitchen utensils, and flatware sets",
+      "email": "",
+      "website": "www.gdwyd.com",
+      "phone": ""
+    },
+    {
+      "id": "m44",
+      "industryId": "ind10",
+      "name": "Guangdong Songfa Ceramics Co., Ltd.",
+      "products": "Household ceramics, dinnerware, gift porcelain, and hotel ceramic products",
+      "email": "",
+      "website": "www.songfa.com",
+      "phone": ""
+    },
+    {
+      "id": "m45",
+      "industryId": "ind11",
+      "name": "Yiwu Best Choice Trade Co., Ltd.",
+      "products": "Party decorations, festive supplies, gift items, and promotional products",
+      "email": "",
+      "website": "www.yiwu.ltd",
+      "phone": ""
+    },
+    {
+      "id": "m46",
+      "industryId": "ind12",
+      "name": "Shaoxing Tangsilk Textile Co., Ltd.",
+      "products": "Printed fabrics, fashion fabrics, woven textiles, and garment materials",
+      "email": "",
+      "website": "www.tansilk.com",
+      "phone": ""
+    },
+    {
+      "id": "m47",
+      "industryId": "ind13",
+      "name": "Zhejiang KIMO Power Tools Co., Ltd.",
+      "products": "Cordless power tools, drills, impact wrenches, and garden tool equipment",
+      "email": "",
+      "website": "www.kimopower.com",
+      "phone": ""
+    },
+    {
+      "id": "m48",
+      "industryId": "ind14",
+      "name": "Taizhou Huaxu Mould Plastic Co., Ltd.",
+      "products": "Injection moulds, plastic crates, turnover boxes, and household plastic products",
+      "email": "",
+      "website": "www.tzhuaxu.com",
+      "phone": ""
+    },
+    {
+      "id": "m49",
+      "industryId": "ind15",
+      "name": "Ningbo Holon Electric Appliance Co., Ltd.",
+      "products": "Heaters, fans, seasonal appliances, and small home electrical products",
+      "email": "",
+      "website": "www.nbholon.com",
+      "phone": ""
+    },
+    {
+      "id": "m50",
+      "industryId": "ind16",
+      "name": "Aokang Group Co., Ltd.",
+      "products": "Leather shoes, casual footwear, business shoes, and fashion shoe collections",
+      "email": "",
+      "website": "www.aokang.com",
+      "phone": ""
+    },
+    {
+      "id": "m51",
+      "industryId": "ind17",
+      "name": "Anji Yige Furniture Co., Ltd.",
+      "products": "Office chairs, executive chairs, mesh chairs, and ergonomic seating",
+      "email": "",
+      "website": "www.anji-eagle.com",
+      "phone": ""
+    },
+    {
+      "id": "m52",
+      "industryId": "ind18",
+      "name": "Danyang Lucky Optical Co., Ltd.",
+      "products": "Optical lenses, prescription lenses, sunglasses, and eyewear frames",
+      "email": "",
+      "website": "www.dylucky.com",
+      "phone": ""
+    },
+    {
+      "id": "m53",
+      "industryId": "ind19",
+      "name": "SuzhouFashion",
+      "products": "Wedding dresses, bridal gowns, bridesmaid dresses, and formal gowns",
+      "email": "service@suzhoufashion.com",
+      "website": "www.suzhoufashion.com",
+      "phone": "+1 646 263 3521"
+    },
+    {
+      "id": "m54",
+      "industryId": "ind20",
+      "name": "Nantong Goldenhome Textile Co., Ltd.",
+      "products": "Comforters, quilts, bedding sets, pillows, and home textile products",
+      "email": "",
+      "website": "www.goldenhometextile.cn",
+      "phone": ""
+    },
+    {
+      "id": "m55",
+      "industryId": "ind21",
+      "name": "Jingdezhen Wufeng Ceramic Co., Ltd.",
+      "products": "Tea sets, porcelain tableware, ceramic artware, and gift porcelain",
+      "email": "",
+      "website": "www.wufengart.com",
+      "phone": ""
+    },
+    {
+      "id": "m56",
+      "industryId": "ind22",
+      "name": "361 Degrees International Limited",
+      "products": "Sports shoes, running shoes, kids footwear, and performance sportswear",
+      "email": "",
+      "website": "www.361sport.com",
+      "phone": ""
+    },
+    {
+      "id": "m57",
+      "industryId": "ind23",
+      "name": "Shishi MDQ Garment Co., Ltd.",
+      "products": "Menswear, woven garments, jackets, and casual apparel manufacturing",
+      "email": "",
+      "website": "www.mdqgarment.com",
+      "phone": ""
+    },
+    {
+      "id": "m58",
+      "industryId": "ind24",
+      "name": "Dehua Best Ceramics Co., Ltd.",
+      "products": "White porcelain crafts, tea sets, home decor ceramics, and ceramic giftware",
+      "email": "",
+      "website": "www.bestceramics.cn",
+      "phone": ""
+    },
+    {
+      "id": "m59",
+      "industryId": "ind25",
+      "name": "Xiamen Oready Industry & Trade Co., Ltd.",
+      "products": "Backpacks, travel bags, cooler bags, and custom sewn bag products",
+      "email": "",
+      "website": "www.oready-bags.com",
+      "phone": ""
+    },
+    {
+      "id": "m60",
+      "industryId": "ind26",
+      "name": "Fujian Fengyuan Umbrella Co., Ltd.",
+      "products": "Golf umbrellas, folding umbrellas, promotional umbrellas, and straight umbrellas",
+      "email": "",
+      "website": "www.uniumbrella.com",
+      "phone": ""
+    },
+    {
+      "id": "m61",
+      "industryId": "ind27",
+      "name": "Fujian Hanhe Sanitary Products Co., Ltd.",
+      "products": "Baby diapers, pull-up pants, sanitary pads, and hygiene care products",
+      "email": "",
+      "website": "www.hanhe-diaper.com",
+      "phone": ""
+    },
+    {
+      "id": "m62",
+      "industryId": "ind28",
+      "name": "Xiantao Yucheng Protective Products Co., Ltd.",
+      "products": "Disposable coveralls, masks, isolation gowns, and protective nonwoven products",
+      "email": "",
+      "website": "www.xiantaoprotective.com",
+      "phone": ""
+    },
+    {
+      "id": "m63",
+      "industryId": "ind29",
+      "name": "Rebecca Fashion",
+      "products": "Human hair wigs, weaves, closures, and hair extension products",
+      "email": "",
+      "website": "www.rebeccafashion.com",
+      "phone": ""
+    },
+    {
+      "id": "m64",
+      "industryId": "ind30",
+      "name": "Luoyang CBNT Steel Cabinet Co., Ltd.",
+      "products": "Steel filing cabinets, lockers, office shelves, and storage furniture",
+      "email": "",
+      "website": "www.cbntfurniture.com",
+      "phone": ""
+    },
+    {
+      "id": "m65",
+      "industryId": "ind31",
+      "name": "Qingdao Qihang Tyre Co., Ltd.",
+      "products": "Truck tires, off-road tires, industrial tires, and radial tyre products",
+      "email": "",
+      "website": "www.forerunnertires.com",
+      "phone": ""
+    },
+    {
+      "id": "m66",
+      "industryId": "ind32",
+      "name": "Guangwei Group Co., Ltd.",
+      "products": "Fishing rods, reels, carbon rods, and integrated fishing tackle products",
+      "email": "",
+      "website": "www.guangwei.com",
+      "phone": ""
+    },
+    {
+      "id": "m67",
+      "industryId": "ind33",
+      "name": "Baigou Xincheng Shengtailuo Bags Factory",
+      "products": "School bags, backpacks, laptop bags, and fashion luggage products",
+      "email": "",
+      "website": "www.stluggage.com",
+      "phone": ""
+    },
+    {
+      "id": "m68",
+      "industryId": "ind34",
+      "name": "Hebei Jiuyun Gloves Co., Ltd.",
+      "products": "Leather gloves, work gloves, fashion gloves, and leather accessories",
+      "email": "",
+      "website": "www.jiuyungloves.com",
+      "phone": ""
+    }
+  ]
+}
